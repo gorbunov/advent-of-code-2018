@@ -11,4 +11,8 @@ foreach ($claims as $claim) {
     $claimIntersector->applyClaim($claim);
 }
 
-print "Inrtersecting positions: ". $claimIntersector->intersecting(). "\n";
+print "Intersecting positions: ". $claimIntersector->intersecting(). "\n";
+
+# solution part 02
+
+print "Unaffecting claim id: " . $claimIntersector->findCleanClaim($claims)->getId() . "\n";

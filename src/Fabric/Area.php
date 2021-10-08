@@ -40,4 +40,9 @@ final class Area
     }
 
 
+    public function size() : int
+    {
+        return $this->getLength() * $this->getWidth();
+    }
+
 }

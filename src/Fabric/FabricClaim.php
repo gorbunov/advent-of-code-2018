@@ -35,12 +35,12 @@ final class FabricClaim
         return $this->startingPosition;
     }
 
-    public function getArea(): Area
+    public function getAreaDefinition(): Area
     {
         return $this->area;
     }
 
-    public function getRightBottomPosition() :Point2D
+    public function getRightBottomPosition(): Point2D
     {
         return Point2D::create($this->startingPosition->getX() + $this->area->getWidth(), $this->startingPosition->getY() + $this->area->getLength());
     }
