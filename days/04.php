@@ -39,3 +39,5 @@ $currentShift->changedState(60);
 $mostAsleepGuard = $guards->mostAsleep();
 $bestMinuteAsleep = $mostAsleepGuard->mostSleepyAt();
 print "Good at #".$mostAsleepGuard->getGuardId()." x ".$bestMinuteAsleep." = ".$bestMinuteAsleep * $mostAsleepGuard->getGuardId()."\n";
+
+# solution part 02
