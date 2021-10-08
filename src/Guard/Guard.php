@@ -45,8 +45,18 @@ final class Guard
             $sleptAtShiftInMinutes = $shift->sleptAtMinutes();
             $sleepyAt = [...$sleepyAt, ...$sleptAtShiftInMinutes];
         }
-        var_dump(array_count_values($sleepyAt));
-        return 0;
+        $sleepyAt = array_count_values($sleepyAt);
+        $maxAsleep = 0;
+        $minuteAsleep = 0;
+        foreach ($sleepyAt as $minute => $timesAsleep)
+        {
+            if ($timesAsleep > $maxAsleep) {
+                $maxAsleep = $timesAsleep;
+                $minuteAsleep = $minute;
+            }
+        }
+
+        return $minuteAsleep;
     }
 
     public function __toString(): string

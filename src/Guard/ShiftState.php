@@ -42,7 +42,7 @@ final class ShiftState
     #[Pure]
     public function getMinutesRange(): array
     {
-        return range($this->getStart(), $this->getStart() + $this->getLength());
+        return range($this->getStart(), $this->getStart() + $this->getLength() -1);
     }
 
     /**
