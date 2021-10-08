@@ -1,0 +1,13 @@
+{
+    "require": {
+        "minibase-app/minilib": "^0.1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "" : "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    }
+}

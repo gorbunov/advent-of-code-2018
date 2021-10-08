@@ -1,0 +1,123 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "6a95711660fdc8ee806b6ef75db1c7c1",
+    "packages": [
+        {
+            "name": "minibase-app/minilib",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/minibase-app/minilib.git",
+                "reference": "3b2eac7e4f9ddbde486f033f77d6fa0cb42333ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/minibase-app/minilib/zipball/3b2eac7e4f9ddbde486f033f77d6fa0cb42333ad",
+                "reference": "3b2eac7e4f9ddbde486f033f77d6fa0cb42333ad",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "ergebnis/composer-normalize": "^2.11",
+                "friendsofphp/php-cs-fixer": "^2.18",
+                "pestphp/pest": "^0.3.7",
+                "phpstan/phpstan": "^0.12.58",
+                "phpunit/phpunit": "9.3.11",
+                "psy/psysh": "^0.10.4",
+                "symfony/var-dumper": "~4"
+            },
+            "type": "library",
+            "extra": {
+                "composer-normalize": {
+                    "indent-size": 4,
+                    "indent-style": "space"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/append.php",
+                    "src/array_keys_exist.php",
+                    "src/array_make.php",
+                    "src/between.php",
+                    "src/bits.php",
+                    "src/blank.php",
+                    "src/camel_case.php",
+                    "src/clamp.php",
+                    "src/class_basename.php",
+                    "src/collapse.php",
+                    "src/exists.php",
+                    "src/generate.php",
+                    "src/head.php",
+                    "src/here.php",
+                    "src/ini.php",
+                    "src/ip.php",
+                    "src/is_associative.php",
+                    "src/is_console.php",
+                    "src/is_falsey.php",
+                    "src/is_truthy.php",
+                    "src/is_web.php",
+                    "src/is_windows.php",
+                    "src/is_unix.php",
+                    "src/kebab_case.php",
+                    "src/numeronym.php",
+                    "src/map.php",
+                    "src/me.php",
+                    "src/only.php",
+                    "src/ordinal.php",
+                    "src/partial.php",
+                    "src/pascal_case.php",
+                    "src/path.php",
+                    "src/pluck.php",
+                    "src/prepend.php",
+                    "src/random_float.php",
+                    "src/read.php",
+                    "src/retry.php",
+                    "src/runtime.php",
+                    "src/snake_case.php",
+                    "src/str_random.php",
+                    "src/swap.php",
+                    "src/tail.php",
+                    "src/tap.php",
+                    "src/transform.php",
+                    "src/value.php",
+                    "src/whoami.php",
+                    "src/with.php",
+                    "src/wrap.php",
+                    "src/write.php",
+                    "src/zip.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordan Brauer",
+                    "email": "18744334+jordanbrauer@users.noreply.github.com"
+                }
+            ],
+            "description": "A collection of random, quality of life functions for PHP – a sort of kitchen-sink toolbox.",
+            "support": {
+                "issues": "https://github.com/minibase-app/minilib/issues",
+                "source": "https://github.com/minibase-app/minilib/tree/v0.1.1"
+            },
+            "time": "2021-05-13T04:45:23+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}
