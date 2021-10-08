@@ -38,6 +38,9 @@ $currentShift->changedState(60);
 
 $mostAsleepGuard = $guards->mostAsleep();
 $bestMinuteAsleep = $mostAsleepGuard->mostSleepyAt();
-print "Good at #".$mostAsleepGuard->getGuardId()." x ".$bestMinuteAsleep." = ".$bestMinuteAsleep * $mostAsleepGuard->getGuardId()."\n";
+print "Strategy 1: #".$mostAsleepGuard->getGuardId()." x ".$bestMinuteAsleep." = ".$bestMinuteAsleep * $mostAsleepGuard->getGuardId()."\n";
 
 # solution part 02
+$consistentSleepGuard = $guards->getSleepConsistentGuard();
+$sleepiestMinute = $consistentSleepGuard->sleepiestMinute();
+print "Strategy 2: #".$consistentSleepGuard->getGuardId()." x ".$sleepiestMinute." = ".$sleepiestMinute * $consistentSleepGuard->getGuardId()."\n";

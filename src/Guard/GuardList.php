@@ -23,12 +23,27 @@ final class GuardList
         $mostSleepyGuard = null;
         foreach ($this->guards as $guard) {
             $guardAsleepTotal = $guard->timeAsleep();
-            print "Guard #".$guard->getGuardId()." was asleep ${guardAsleepTotal} minutes\n";
+            # print "Guard #".$guard->getGuardId()." was asleep ${guardAsleepTotal} minutes\n";
             if ($guardAsleepTotal > $max) {
                 $max = $guardAsleepTotal;
                 $mostSleepyGuard = $guard;
             }
         }
         return $mostSleepyGuard;
+    }
+
+    public function getSleepConsistentGuard(): Guard
+    {
+        $maxConsistency = 0;
+        $mostConsistentSleeper = null;
+        foreach ($this->guards as $guard) {
+            $maxTimes = $guard->getSleepsAtSameMinute();
+            if ($maxTimes > $maxConsistency) {
+                $maxConsistency = $maxTimes;
+                $mostConsistentSleeper = $guard;
+            }
+        }
+
+        return $mostConsistentSleeper;
     }
 }
